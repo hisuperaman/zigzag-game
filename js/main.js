@@ -36,5 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 game.restart()
             }
         })
+
+        document.addEventListener('keydown', (e) => {
+            const key = e.key
+
+            if (key === ' ') {
+                if (game.gameover) {
+                    game.restart()
+                }
+            }
+        })
     }
 })
